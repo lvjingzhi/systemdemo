@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+      <title>{{title}}</title>
+      <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+      <link rel='stylesheet' href='/stylesheets/style.css' />
+      {{{link}}}
   </head>
   <body>
-    {{{body}}}
+  <div class="navbar navbar-expand-lg header">
+      <h3 class="title">湖州市妇幼健康管理平台</h3>
+      <div class="btn-group  ">
+          <button id="mainPage" class="btn button-pink">首页</button>
+          <button id="womanPage" class="btn button-pink">妇女管理</button>
+          <button id="childPage" class="btn button-pink">儿童管理</button>
+          <button type="threeNet" class="btn button-pink">三网监测</button>
+          <button type="config" class="btn button-pink">设置</button>
+      </div>
+  </div>
+  {{{body}}}
   </body>
+  <script src="javascripts/jquery.js"></script>
+  <script src="lib/bootstrap/bootstrap.js"></script>
+    {{{script}}}
 </html>
